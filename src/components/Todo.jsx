@@ -61,7 +61,6 @@ class Todo extends Component {
               defaultValue={title}
               onKeyPress={({ key }) => (key === 'Enter' ? this.onEdit() : null)}
               editing={editing}
-              onMouseEnter={() => this.input.focus()}
             />) : (
               <Text completed={completed}>
                 {title}

@@ -53,7 +53,6 @@ class NewTodo extends Component {
             placeholder="Type your next todo..."
             onChange={({ target: { value } }) => this.onChange(value)}
             onKeyPress={({ key }) => (key === 'Enter' ? this.onAdd() : null)}
-            onMouseEnter={() => this.input.focus()}
           />
         </Row>
         <Divider />
